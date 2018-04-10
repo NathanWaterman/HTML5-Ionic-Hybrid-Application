@@ -1,4 +1,4 @@
-ionic Command Line commands
+ionic Command Line commands:
 
 Ionic serve -c
 
