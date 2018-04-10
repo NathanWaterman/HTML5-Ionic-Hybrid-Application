@@ -1,3 +1,492 @@
-page-home {
+/** JUST FOR TESTING **/
+.panel{
+	height:100%;
+}
 
+.grid-test-container{
+	padding-top:42px;
+	ion-row{
+		ion-col{
+			background-color:transparent;
+			border:0px;
+			padding:0px;
+		}
+	}
+}
+
+.button-test{
+	padding:25px;
+	background-color:green;
+	cursor:pointer;
+}
+
+
+/* Splash screen fade out */
+#splash{
+position:absolute;
+left:0;
+top:0;
+right:0;
+bottom:0;
+background-color:#FFF;
+z-index:100;
+
+animation:3s ease 0s normal forwards 1 fadeOut;
+-webkit-animation:3s ease 0s normal forwards 1 fadeOut;
+opacity:1;
+
+.splash-img-container{
+	position: absolute;
+    top: 71%;
+    transform: translateY(-50%);
+    margin-left:10%;
+    .key{
+	    position: relative;
+	    top: 15px;
+
+	    animation:3s ease 0s normal forwards 1 fadeOutKey;
+		-webkit-animation:3s ease 0s normal forwards 1 fadeOutKey;
+		opacity:1
+    }
+    .text{
+	    animation:2.8s ease 0s normal forwards 1 fadeOutText;
+		-webkit-animation:2.8s ease 0s normal forwards 1 fadeOutText;
+		opacity:1
+    }
+}
+
+}
+
+/* CSS FadeOut splash page */
+@keyframes fadeOut{
+    0%{opacity:1;z-index:100;}
+    80%{opacity:1;z-index:100;}
+    100%{opacity:0;z-index:0;}
+}
+
+@-webkit-keyframes fadeOut{
+    0%{opacity:1;z-index:100;}
+    80%{opacity:1;z-index:100;}
+    100%{opacity:0;z-index:0;}
+}
+
+
+/* css FadeOut for the logo Text */
+@keyframes fadeOutText{
+    0%{opacity:1;z-index:100;}
+    80%{opacity:1;z-index:100;}
+    100%{opacity:0;z-index:0;}
+}
+
+@-webkit-keyframes fadeOutText{
+    0%{opacity:1;z-index:100;}
+    80%{opacity:1;z-index:100;}
+    100%{opacity:0;z-index:0;}
+}
+
+/* CSS FadeOut for the logo Key */
+@keyframes fadeOutKey{
+    0%{opacity:1;z-index:100;}
+    80%{opacity:1;z-index:100;}
+    100%{opacity:0;z-index:0;}
+}
+
+@-webkit-keyframes fadeOutKey{
+    0%{opacity:1;z-index:100;}
+    80%{opacity:1;z-index:100;}
+    100%{opacity:0;z-index:0;}
+}
+
+
+
+
+
+/* left login panel css */
+.panel-left{
+    opacity:0;
+    padding-top: 5% !important;
+    padding-left: 5% !important;
+    h2{
+    	font-family: frutiger45Light;
+    	font-size:38px;
+    	margin-top: 5.5rem;
+    	margin-bottom: 0rem;
+    }
+    p{
+    	font-family: frutiger55roman;
+    	color:#646464;
+    	span{
+    		color:#007099;
+    	}
+    }
+
+
+	    .form-container{
+			input[type='text'],input[type='password']{
+				cursor: pointer;
+				font-family: frutiger55roman;
+				font-size:16px;
+				color:#646464;
+				margin-top: 4.5rem;
+				padding:0px 0px 5px 0px;
+				padding-left:0px;
+				border:0px;
+				border-bottom:1px solid #646464;
+				display:block;
+				-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+
+			}
+			fieldset{
+				margin-top:25px;
+				position:relative;
+				border:0px;
+				[type="radio"]:checked,
+			[type="radio"]:not(:checked) {
+			    position: absolute;
+			    left: -9999px;
+			}
+			[type="radio"]:checked + label,
+			[type="radio"]:not(:checked) + label
+			{
+			    position: relative;
+			    padding-left: 14px;
+			    cursor: pointer;
+			    line-height: 14px;
+			    display: inline-block;
+			    color: #666;
+			}
+			[type="radio"]:checked + label:before,
+			[type="radio"]:not(:checked) + label:before {
+			    content: '';
+			    position: absolute;
+			    left: -11px;
+			    top: 0px;
+			    width: 12px;
+			    height: 12px;
+			    border: 0px solid #FFF;
+			    /*background: #fff;*/
+
+			    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+				  -webkit-border-radius: 100%; 
+
+				  /* Firefox 1-3.6 */
+				  -moz-border-radius: 100%; 
+				  
+				  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+				  border-radius: 100%; 
+
+				 /* box-shadow: 0 0 0 1px #fff;*/
+			}
+			[type="radio"]:checked + label:after,
+			[type="radio"]:not(:checked) + label:after {
+			        content: url('../assets/imgs/radio-check.png');
+			        color:#FFF;
+				    width: 18px;
+				    height: 18px;
+				    /*background: #3B8085;*/
+				    position: absolute;
+				    top: -3px;
+				    left: -9px;
+			    -webkit-transition: all 0.2s ease;
+			    transition: all 0.2s ease;
+
+			    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+				  -webkit-border-radius: 100%; 
+
+				  /* Firefox 1-3.6 */
+				  -moz-border-radius: 100%; 
+				  
+				  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+				  border-radius: 100%; 
+
+				 /* box-shadow: 0 0 0 1px #fff;*/
+			}
+			[type="radio"]:not(:checked) + label:after {
+			    opacity: 0;
+			    -webkit-transform: scale(0);
+			    transform: scale(0);
+			}
+			[type="radio"]:checked + label:after {
+			    opacity: 1;
+			    -webkit-transform: scale(1);
+			    transform: scale(1);
+			}
+
+			[type="radio"]:checked ~ .radio-border {
+			    border: 1px solid #3B8085;
+			    background: #3B8085;
+			}
+
+			}
+			input[type='submit']{
+				font-family:frutiger45Light;
+				background-color:#D7D760;
+				margin-top:25px;
+				padding:8px 30px 8px 30px;
+				-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			}
+
+			/* text input field with animatiob */
+			.input-container{
+				position:relative;
+			}
+
+		/*input[type='text']:focus ~ .floating-label,
+		input[type='text']:not(:focus):valid ~ .floating-label,
+		input[type='password']:focus ~ .floating-label,
+		input[type='password']:not(:focus):valid ~ .floating-label{
+		  top: -17px;
+		  bottom: 10px;
+		  left: 0px;
+		  font-size: 11px;
+		  opacity: 1;
+		}*/
+
+		.floating-label {
+		  font-family:frutiger45Light;
+			   font-size:16px;
+			   color:#646464;
+		  position: absolute;
+		  pointer-events: none;
+		  left: 0px;
+		  top: 0px;
+		  transition: 0.2s ease all;
+		}
+	}
+
+
+}
+/*right login panel css */
+.panel-right{
+	opacity:0;
+    position:relative;
+    left:100%;
+    img{
+    	width:100%;
+    	height:100%;
+    }
+}
+
+
+
+/*registyer container */
+.register-container{
+	margin-top:7.5rem;
+	p{
+		font-size:16px;
+		color:#000;
+		&:last-child{
+			text-decoration:underline;
+			font-size:14px;
+		}
+	}
+}
+
+
+/* form and contents */
+.tagline{
+	opacity:0;
+}
+.input-form{
+	/*display:none;*/
+	opacity:0;
+	input{
+		width:10%;
+	}
+}
+.submit-btn-container{
+	background-color:transparent !important;
+	border:0px !important;
+	>div{
+		position:relative;
+		z-index:10;
+		text-align:center;
+		.next-btn{
+			z-index:100;
+		    width: 0px;
+		    height: 100px;
+		    position: absolute;
+		    left: 36%;
+		    bottom: 25px;
+		    opacity:0;
+		    cursor:pointer;
+		    display:table;
+		}
+		.submit-btn{
+			background-color:#3B8085;
+			z-index:100;
+		    width: 0px;
+		    height: 50px;
+		    position: absolute;
+		    left: 36%;
+		    bottom: 25px;
+		    opacity:0;
+		    cursor:pointer;
+		    display:table;
+		    display:none;
+		}
+	}
+}
+
+
+.footer{
+	opacity:0;
+	padding-right:5%;
+	ul{
+		float:right;
+		margin:0px;
+		padding:0px;
+		padding-right:2%;
+		padding-top:10px;
+		li{
+			padding-left: 10px;
+		    padding-right: 10px;
+		    padding-bottom: 2px;
+			display:inline-block;
+			color:#646464;
+			font-size:13px;
+			font-family:frutiger45Light;
+		}
+	}
+}
+
+
+/*animation override classes*/
+.back-arrow-container{
+	opacity:0;
+	position: absolute;
+    top: 6px;
+    i{
+    	font-size:23px;
+    }
+}
+
+.next-btn-focus-trigger{
+	bottom:527px !important;
+	left:66% !important;
+}
+.next-btn-trigger{
+	left: 36% !important;
+    bottom: 25px !important;
+    opacity:0 !important;
+    width: 0px !important;
+}
+
+.placeholder-trigger{
+	font-size:25px !important;
+}
+
+.input-adjust{
+	font-size:36px !important;
+}
+
+.pass-input-adjust{
+	font-size:36px !important;
+}
+
+
+/*** Reset username text link ***/
+.reset-username,.reset-password{
+	font-family: frutiger55roman;
+	display:none;
+	position: absolute;
+    text-decoration: underline;
+    left: 100%;
+    width: 100%;
+    bottom: -25px;
+}
+
+.thumb-print-btn{
+	display:none;
+	position: absolute;
+    left: 125%;
+    bottom: 5px;
+}
+
+input[type='text']:focus ~ .floating-label-adjust,
+input[type='text']:not(:focus):valid ~ .floating-label-adjust,
+input[type='password']:focus ~ .floating-label-adjust,
+input[type='password']:not(:focus):valid ~ .floating-label-adjust{
+  font-size: 16px !important;
+      top: -30px !important;
+}
+
+.floating-label-adjust {
+	   font-size:16px !important;
+	   top:-2px !important;
+}
+
+.floating-label-adjust-blur {
+	   font-size:12px !important;
+	   top:-20px !important;
+}
+
+
+
+/**** animated sign in bar ****/
+.progressbar-container{
+  display:none;
+  margin: auto;
+  width: 160%;
+  background-color: transparent;
+	position:relative;
+	h1{
+		font-family: frutiger45Light;
+		font-size:25px;
+		color:#757575;
+		margin-top:12%;
+		margin-bottom:8%;
+	}
+}
+
+.path {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+  margin: auto;
+}
+.shape {
+  position: absolute;
+  left: 0;
+  background-color: #3B8085;
+  width: 80px;
+  height: 10px;
+  display: block;
+	top: 0;
+	z-index:1000;
+	
+	/*-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;*/
+  
+  x-transition: all 1s ease-in-out;
+  animation: ani 1.7s infinite;
+}
+
+.bar{
+	width: 100%;
+	height:1px;
+	background-color:#000;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2px;
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 85%;
+  }
+  100% {
+    right: 0;
+  }
 }

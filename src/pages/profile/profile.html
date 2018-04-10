@@ -1,0 +1,537 @@
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content class="profile-container">
+
+
+<!-- Tab1 Modal popups -->
+<div id="openModal1" class="modalDialog">
+	<div class="modal1">
+		<div class="heading">
+			<div class="close-container">
+				<a href="#close" title="Close" class="close">Close</a>
+			</div>
+			<div class="title-container">
+				<p>Add Close To Me</p>
+			</div>
+			<div class="save-container">
+				<a href="#close" title="Close" class="add-modal1-field">Done</a>
+			</div>
+		</div>
+		<form>
+			<label>Name</label>
+	        <input type="text" id="fnameModal1">
+			<label>Relationship</label>
+			<input type="text" id="relationship">
+			<label>Age</label>
+			<input type="text" id="age">
+	    </form>
+	</div>
+</div>
+<div id="openModal1B" class="modalDialog">
+	<div class="modal1">
+		<div class="heading">
+			<div class="close-container">
+				<a href="#close" title="Close" class="close">Close</a>
+			</div>
+			<div class="title-container">
+				<p>Edit Close To Me</p>
+			</div>
+			<div class="save-container">
+				<a href="#close" title="Close" class="edit-modal1-field">Done</a>
+			</div>
+		</div>
+		<form>
+			<label>Name</label>
+	        <input type="text" id="fnameModal1Edit">
+			<label>Relationship</label>
+			<input type="text" id="relationshipEdit">
+			<label>Age</label>
+			<input type="text" id="ageEdit">
+	    </form>
+	    <a href="#close" title="Close" class="delete-btn-modal1">Delete Close To Me</a>
+	</div>
+</div>
+<!-- end Tab1 Modal popups -->
+
+
+
+<!-- Tab2 Modal popups -->
+<div id="openModal2" class="modalDialog">
+	<div class="modal2">
+		<div class="heading">
+			<div class="close-container">
+				<a href="#close" title="Close" class="close">Close</a>
+			</div>
+			<div class="title-container">
+				<p>Add External Professionals</p>
+			</div>
+			<div class="save-container">
+				<a href="#close" title="Close" class="add-modal2-field">Done</a>
+			</div>
+		</div>
+		<form>
+			<label>Full Name</label>
+	        <input type="text" id="fname">
+	        <label>Role</label>
+	        <fieldset>
+		        <select id="role">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="mercedes">Mercedes</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</fieldset>
+			<label>Company Name</label>
+			<input type="text" id="company">
+			<label>Phone</label>
+			<input type="text" id="phone">
+			<label>Email</label>
+			<input type="text" id="newEmail">
+	    </form>
+	</div>
+</div>
+<div id="openModal2B" class="modalDialog">
+	<div class="modal2">
+		<div class="heading">
+			<div class="close-container">
+				<a href="#close" title="Close" class="close">Close</a>
+			</div>
+			<div class="title-container">
+				<p>Edit External Professionals</p>
+			</div>
+			<div class="save-container">
+				<a href="#close" title="Close" class="edit-modal2-field">Done</a>
+			</div>
+		</div>
+		<form>
+			<label>Full Name</label>
+	        <input type="text" id="fnameEdit">
+	        <label>Role</label>
+	        <fieldset>
+		        <select id="roleEdit">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="mercedes">Mercedes</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</fieldset>
+			<label>Company Name</label>
+			<input type="text" id="companyEdit">
+			<label>Phone</label>
+			<input type="text" id="phoneEdit">
+			<label>Email</label>
+			<input type="text" id="newEmailEdit">
+	    </form>
+	    <a href="#close" title="Close" class="delete-btn-modal2">Delete External Professional</a>
+	</div>
+</div>
+<!-- end Tab2 Modal popups -->
+
+
+<!-- Tab3 Modal popups -->
+<div id="openModal3" class="modalDialog">
+	<div class="modal3">
+		<div class="heading">
+			<div class="close-container">
+				<a href="#close" title="Close" class="close">Close</a>
+			</div>
+			<div class="title-container">
+				<p>Add Organizations</p>
+			</div>
+			<div class="save-container">
+				<a href="#close" title="Close" class="add-modal3-field">Done</a>
+			</div>
+		</div>
+		<form>
+			<label>Organization</label>
+	        <input type="text" id="organization">
+	        <label>Type</label>
+			<input type="text" id="type">
+	        <label>Role</label>
+	        <fieldset>
+		        <select id="organizationRole">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="mercedes">Mercedes</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</fieldset>
+			<label>Website</label>
+			<input type="text" id="website">
+	    </form>
+	</div>
+</div>
+<div id="openModal3B" class="modalDialog">
+	<div class="modal3">
+		<div class="heading">
+			<div class="close-container">
+				<a href="#close" title="Close" class="close">Close</a>
+			</div>
+			<div class="title-container">
+				<p>Edit Organizations</p>
+			</div>
+			<div class="save-container">
+				<a href="#close" title="Close" class="edit-modal3-field">Done</a>
+			</div>
+		</div>
+		<form>
+			<label>Organization</label>
+	        <input type="text" id="organizationEdit">
+	        <label>Type</label>
+			<input type="text" id="typeEdit">
+	        <label>Role</label>
+	        <fieldset>
+		        <select id="organizationRoleEdit">
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="mercedes">Mercedes</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</fieldset>
+			<label>Website</label>
+			<input type="text" id="websiteEdit">
+	    </form>
+	    <a href="#close" title="Close" class="delete-btn-modal3">Delete Organization</a>
+	</div>
+</div>
+<!-- End Tab3 Modal popups -->
+
+
+
+
+
+<div class="logo-nav">
+	<img src="./assets/imgs/full_logo.svg"/>
+</div>
+
+<div class="tabordion">
+	<h3>Ronaldinosora <br> Zacapan</h3>
+	<section id="section1">
+		<input checked id="option1" name="sections" type="radio"> <label for="option1">My Information</label>
+		<article>
+			<ion-row>
+				<ion-col col-8>
+					<h1>My Information</h1>
+				</ion-col>
+			</ion-row>
+			<ion-row class="sec1">
+    			<ion-col col-3>
+    				<div class="label">Nickname</div>
+    				<div class="input-text">
+    					<div class="nickname" contenteditable="false">Ron</div> 
+    					<img class="edit-pencil-btn edit" src="./assets/imgs/pencil.svg"/>
+    					<div class="save-btn edit"><p>Save</p></div>
+    				</div>	
+    			</ion-col>
+    			<ion-col col-9>
+    				<div class="label">Martial Status</div>
+    				<div class="input-text">Single</div>
+    			</ion-col>
+    			<hr class="profile">
+    		</ion-row>
+    		<ion-row class="sec2">
+				<ion-col col-8>
+					<div class="label">Primary Email</div>
+					<div class="primary-email">RonZC3114lyfe@hotmail.com</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="sec2">
+				<ion-col col-12 class="other-email">
+					<div id="sections-container">
+						<div class="label">Other Email</div>
+						<div id="section1" class="section1">
+							<div class="email">
+								<div class="label">Email</div>
+								<input class="input-text" name="email" type="text" value="RonnyZ@aol.com" disabled/>
+							</div>
+							<div><div class="make-primary"><p>Make Primary | </p></div></div>
+							<div><div class="remove-btn"><p>Remove</p></div></div>
+							<div class="entry-btn">
+								<div class="cancel"><p>Cancel</p></div>
+								<div class="save"><p>Add Email</p></div>
+							</div>
+						</div>
+					</div>
+				</ion-col>
+				<ion-col col-12>
+					<div class="addNewsection">
+						<p><img src="./assets/imgs/plus-btn.svg"/>Add New</p>
+		            </div>
+				</ion-col>
+    		</ion-row>
+    		<ion-row class="sec2">
+    			<ion-col col-6 class="desc">
+    				<p>Primary e-mail is used to send you important information and notices. This may be different than the e-mail you select for alert subscriptions or e-delivery.</p>
+    			</ion-col>
+    			<hr class="profile">
+    		</ion-row>
+    		<ion-row class="sec3">
+    			<ion-col col-12>
+    				<div class="label">Primary Phone</div>
+    				<label>Home</label>
+    				<div class="primary-phone">555.555.5555</div>
+    			</ion-col>
+    		</ion-row>
+    		<ion-row class="sec3">
+    			<ion-col col-12 class="other-phone">
+	    			<ion-col col-12>
+	    				<div class="label">Other Phone</div>
+	    				<label>Work</label>
+	    				<div class="work-phone">555.555.5555</div>
+	    				<div class="make-primary"><p>Make Primary</p></div>
+	    			</ion-col>
+	    			<ion-col col-12>
+	    				<label>Cell</label>
+	    				<div class="work-phone">555.555.5555</div>
+	    				<div class="make-primary"><p>Make Primary</p></div>
+	    			</ion-col>
+	    			<hr class="profile">
+	    		</ion-col>
+    		</ion-row>
+    		<ion-row class="sec4">
+				<ion-col col-8>
+					<div class="label label-fix">Mailing Address</div>
+					<div class="address">1245 Rum Drive, Temecula, CA, 11111</div>
+				</ion-col>
+				<ion-col col-8>
+					<div class="label">Legal Address</div>
+					<div class="address">1245 Rum Drive, Temecula, CA, 11111</div>
+				</ion-col>
+				<hr class="profile">
+			</ion-row>
+			<ion-row class="sec5">
+				<ion-col col-12>
+					<div class="label">To make changes to your profile, please reach out to your advisor.</div>
+				</ion-col>
+				<ion-col col-3>
+					<div class="advisor-phone"><p>Call advisor (123) 345-6789</p></div>
+				</ion-col>
+			</ion-row>
+
+		</article>
+	</section>
+	<section id="section2" class="section2">
+		<input id="option2" name="sections" type="radio"> <label for="option2">My Relationships</label>
+		<article>
+			<ion-row>
+				<ion-col col-8>
+					<h1>My Relationships</h1>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-9>
+					<ul class="tabs" role="tablist">
+						<li>
+							<input checked id="tab0" name="tabs" type="radio"> <label aria-controls="panel0" aria-selected="true" for="tab0" role="tab" tabindex="0"><p>Close To Me</p><hr width="95%"></label>
+							<div aria-hidden="false" aria-labelledby="description" class="tab-content" id="tab-content0" role="tabpanel">
+								<ion-col col-9>
+									<table id="table1">
+									  <tr>
+									    <th>Name</th>
+									    <th>Relationship</th>
+									    <th>Age</th>
+									    <th></th>
+									  </tr>
+										  <tr>
+										  	<td><div class='edit-nameModal1' contenteditable='false'>Zacapa</div></td>
+										  	<td><div class='edit-relationship' contenteditable='false'>Spouse</div></td>
+										  	<td><div class='edit-age' contenteditable='false'>12</div></td>
+										  	<td><a href='#openModal1B' class='edit-row'><img src='./assets/imgs/pencil.svg'/></a>
+										  	</td>
+										  </tr>
+										  <tr>
+										  	<td><div class='edit-nameModal1' contenteditable='false'>Zacapa</div></td>
+										  	<td><div class='edit-relationship' contenteditable='false'>Spouse</div></td>
+										  	<td><div class='edit-age' contenteditable='false'>12</div></td>
+										  	<td><a href='#openModal1B' class='edit-row'><img src='./assets/imgs/pencil.svg'/></a>
+										  	</td>
+										  </tr>
+									</table>
+									<ion-col col-12>
+										<div class="addNewTable">
+											<p class="addNewBtnModal1"><a href="#openModal1"><img src="./assets/imgs/plus-btn.svg"/>Add New</a></p>
+							            </div>
+									</ion-col>
+								</ion-col>
+							</div>
+						</li>
+						<li>
+							<input id="tab1" name="tabs" type="radio"> <label aria-controls="panel1" aria-selected="false" for="tab1" role="tab1" tabindex="1"><p>External Professionals</p><hr width="97%"></label>
+							<div aria-hidden="true" aria-labelledby="specification" class="tab-content" id="tab-content1" role="tabpanel">
+								<ion-col col-9>
+									<table id="table2">
+									  <tr>
+									    <th>Name</th>
+									    <th>Role</th>
+									    <th>Company</th>
+									    <th>Contact</th>
+									    <th></th>
+									  </tr>
+										  <tr>
+										    <td><div class="edit-name" contenteditable="false">Cozy Powell</div></td>
+										    <td><div class="edit-role" contenteditable="false">saab</div></td>
+										    <td><div class="edit-company" contenteditable="false">Cozy Tax Time</div></td>
+										    <td><div class="link edit-email" contenteditable="false">dcoverdail@ubs.com</div><div contenteditable="false" class="link edit-phone"> 718.549.9999</div></td>
+										    <td><a href="#openModal2B" class="edit-row"><img src="./assets/imgs/pencil.svg"/></a></td>
+										  </tr>
+										  <tr>
+										    <td><div class="edit-name" contenteditable="false">Cozy Powell</div></td>
+										    <td><div class="edit-role" contenteditable="false">volvo</div></td>
+										    <td><div class="edit-company" contenteditable="false">Cozy Tax Time</div></td>
+										    <td><div class="link edit-email" contenteditable="false">dcoverdail@ubs.com</div><div contenteditable="false" class="link edit-phone"> 718.549.3455</div></td>
+										    <td><a href="#openModal2B" class="edit-row"><img src="./assets/imgs/pencil.svg"/></a></td>
+										  </tr>
+									</table>
+									<ion-col col-12>
+										<div class="addNewTable">
+											<p class="addNewBtnModal2"><a href="#openModal2"><img src="./assets/imgs/plus-btn.svg"/>Add New</a></p>
+							            </div>
+
+									</ion-col>
+								</ion-col>
+							</div>
+						</li>
+						<li>
+							<input id="tab2" name="tabs" type="radio"> <label aria-controls="panel2" aria-selected="false" for="tab2" role="tab" tabindex="2"><p>Organizations</p><hr width="90%"></label>
+							<div aria-hidden="false" aria-labelledby="description" class="tab-content" id="tab-content2" role="tabpanel">
+								<ion-col col-9>
+									<table id="table3">
+									  <tr>
+									    <th>Organization</th>
+									    <th>Type</th>
+									    <th>Role</th>
+									    <th>Website</th>
+									    <th></th>
+									  </tr>
+									  <tr>
+									  	<td><div class='edit-organization' contenteditable='false'>International Ski Federation</div>
+									  	</td>
+									  	<td><div class='edit-type' contenteditable='false'>Sports Group</div>
+									  	</td>
+									  	<td><div class='edit-organizationRole' contenteditable='false'>Board Member</div>
+									  	</td>
+									  	<td><div class='link edit-website' contenteditable='false'>website</div></td>
+									  	<td><a href='#openModal3B' class='edit-row'><img src='./assets/imgs/pencil.svg'/></a></td>
+									  </tr>
+									  <tr>
+									  	<td><div class='edit-organization' contenteditable='false'>International Ski Federation</div>
+									  	</td>
+									  	<td><div class='edit-type' contenteditable='false'>Sports Group</div>
+									  	</td>
+									  	<td><div class='edit-organizationRole' contenteditable='false'>Board Member</div>
+									  	</td>
+									  	<td><div class='link edit-website' contenteditable='false'>website</div></td>
+									  	<td><a href='#openModal3B' class='edit-row'><img src='./assets/imgs/pencil.svg'/></a></td>
+									  </tr>
+									</table>
+									<ion-col col-12>
+										<div class="addNewTable">
+											<p class="addNewBtnModal3"><a href="#openModal3"><img src="./assets/imgs/plus-btn.svg"/>Add New</a></p>
+							            </div>
+									</ion-col>
+								</ion-col>
+							</div>
+						</li>
+						<li>
+							<input id="tab3" name="tabs" type="radio"> <label aria-controls="panel3" aria-selected="false" for="tab3" role="tab3" tabindex="3"><p>UBS Team</p><hr width="50%"></label>
+							<div aria-hidden="true" aria-labelledby="specification" class="tab-content" id="tab-content3" role="tabpanel">
+								<ion-col col-9>
+									<hr class="profile ubs-team">
+									<ion-row>
+										<ion-col col-3>
+											<p class="label">Primary</p> <p>Dana Smithstone</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>768 Driggs Ave, Suite 4C</p> <p>Brooklyn, NY 11211</p><p>718.549.5627</p><p>800.449.5627</p>
+										</ion-col>
+										<ion-col col-3>
+											<a href="#">dsmithstone@gmail.com</a> <br> <a href="#">anasmith.com</a> <br> <a href="#">Finra Broker Check</a>
+										</ion-col>
+										<hr class="profile ubs-team">
+									</ion-row>
+									<ion-row>
+										<ion-col col-12>
+											<p>Driggs Wealth Management Group</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>Doug Aldrich</p><p class="make-primary">Make Primary</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>768 Driggs Ave, Suite 4C</p> <p>Brooklyn, NY 11211</p><p>718.549.5627</p><p>800.449.5627</p>
+										</ion-col>
+										<ion-col col-3>
+											<a href="#">dsmithstone@gmail.com</a> <br> <a href="#">anasmith.com</a> <br> <a href="#">Finra Broker Check</a>
+										</ion-col>
+										<hr class="profile ubs-team">
+									</ion-row>
+									<ion-row>
+										<ion-col col-12>
+											<p>Williamsburg Accounting Group</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>Office</p><p class="make-primary">Make Primary</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>768 Driggs Ave, Suite 4C</p> <p>Brooklyn, NY 11211</p><p>718.549.5627</p><p>800.449.5627</p>
+										</ion-col>
+										<ion-col col-3>
+											<a href="#">dsmithstone@gmail.com</a> <br> <a href="#">anasmith.com</a> <br> <a href="#">Finra Broker Check</a>
+										</ion-col>
+									</ion-row>
+									<ion-row>
+										<ion-col col-3>
+											<p>Jenna Aldrich</p><p class="make-primary">Make Primary</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>768 Driggs Ave, Suite 4C</p> <p>Brooklyn, NY 11211</p><p>718.549.5627</p><p>800.449.5627</p>
+										</ion-col>
+										<ion-col col-3>
+											<a href="#">dsmithstone@gmail.com</a> <br> <a href="#">anasmith.com</a> <br> <a href="#">Finra Broker Check</a>
+										</ion-col>
+									</ion-row>
+									<ion-row>
+										<ion-col col-3>
+											<p>Doug Aldrich</p><p class="make-primary">Make Primary</p>
+										</ion-col>
+										<ion-col col-3>
+											<p>768 Driggs Ave, Suite 4C</p> <p>Brooklyn, NY 11211</p><p>718.549.5627</p><p>800.449.5627</p>
+										</ion-col>
+										<ion-col col-3>
+											<a href="#">dsmithstone@gmail.com</a> <br> <a href="#">anasmith.com</a> <br> <a href="#">Finra Broker Check</a>
+										</ion-col>
+									</ion-row>
+								</ion-col>
+							</div>
+						</li>
+					</ul>
+				</ion-col>
+			</ion-row>
+		</article>
+	</section>
+	<section id="section3">
+		<input id="option3" name="sections" type="radio"> <label for="option3">My Goals</label>
+		<article>
+			<h1>My Goals</h1>
+		</article>
+	</section>
+	<section id="section4">
+		<input id="option4" name="sections" type="radio"> <label for="option4">My Snapshot</label>
+		<article>
+			<h1>My Snapshot</h1>
+		</article>
+	</section>
+	<div class="action-container">
+		<a href="#">Log Out</a>
+		<a href="#">Reset Password</a>
+	</div>
+</div>
+
+
+</ion-content>

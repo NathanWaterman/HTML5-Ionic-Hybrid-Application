@@ -1,18 +1,110 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
+<ion-content>
+  <ion-grid class="grid-test-container">
+  <div id="splash">
+    <div class="splash-img-container">
+      <img class="key" src="./assets/imgs/splash_logo_key.svg"/>
+      <img class="text" src="./assets/imgs/splash_logo_text.svg"/>
+    </div>
+  </div>
+  <div class="error-msg-container">
+    <div class="error-msg">
+      <p><span><img src="./assets/imgs/error2.svg"/></span>The credentials you entered are incorrect. Please try again.<span class="dismiss-btn">DISMISS</span></p>
+    </div>
+  </div>
+  <ion-row>
+    <ion-col col-5 class="panel-left panel">
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+      <div class="back-arrow-container">
+          <img src="./assets/imgs/back-arrow.svg"/>
+      </div>
+      <div class="logo"><img src="./assets/imgs/full_logo.svg"/></div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+      <div class="progressbar-container">
+      <h1>Signing you in...</h1>
+       <div class="path">
+          <span id="elem" class="shape trail"></span>
+          <div class="bar"></div>
+        </div>
+      </div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+      <div class="tagline"><h2>Welcome to UBS, <br> sign in here</h2></div>
+      <div class="form-container">
+        <form id="formID" class="input-form">
+            <div class="input-container username-container">
+              <input id="username" class="input-trigger" type="text" name="user" [(ngModel)]="inputName" required>
+              <span class="floating-label float-user">Username</span>
+              <span class="reset-username">Reset your username</span>
+            </div>
+            <div class="input-container password-container">
+              <img class="thumb-print-btn" src="./assets/imgs/thumb-print.svg"/>
+              <input id="password" class="input-trigger" type="password" name="pass" [(ngModel)]="inputPass" required>
+              <span class="floating-label float-pass">Password</span>
+              <span class="reset-password">Reset your password</span>
+            </div>
+          <fieldset class="remember-me-container">
+            <input type="radio" id="test1" name="radio-group">
+            <label for="test1">Remember Me</label>
+            <div class="radio-border"></div>
+          </fieldset>
+          <div class="forgot-user-container">
+            <p>Forgot <span>username</span> or <span>password</span>?</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="register-container">
+        <p>Need online access?</p>
+        <p>Register Account?</p>
+      </div>
+    </ion-col>
+
+    <ion-col col-7 class="panel-right panel">
+      <img class="text" src="./assets/imgs/right-panel-img.png"/>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12 class="submit-btn-container">
+      <div>
+        <div class="next-btn disabled">
+          <p>Next
+            <svg width="24px" height="13px" viewBox="0 0 24 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs></defs>
+                  <g id="next/disabled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-38.000000, -56.000000)">
+                      <g id="Group-6" fill="#AAAAAA">
+                          <g id="Group-4" transform="translate(20.000000, 32.000000)">
+                              <polygon id="Page-1-Copy-8" transform="translate(29.999736, 30.508594) scale(-1, 1) translate(-29.999736, -30.508594) " points="24.5248397 24 18 30.4915921 24.4915921 37.0171874 25.5630712 35.9517532 20.9008523 31.2653542 41.9994711 31.2653542 41.9994711 29.7541001 20.8827172 29.7541001 25.5902738 25.0707235"></polygon>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+          </p>
+        </div>
+          <div class="active submit-btn" (click)="showProfilePage()">
+            <p>
+              Sign In
+            </p>
+          </div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="footer">
+      <ul>
+        <li>Disclosures</li>
+        <li>Support</li>
+      </ul>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
+
 </ion-content>
